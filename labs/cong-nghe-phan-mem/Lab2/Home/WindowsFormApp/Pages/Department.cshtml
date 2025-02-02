@@ -1,0 +1,42 @@
+@page
+@model WindowsFormApp.Pages.DepartmentsModel
+@{
+    ViewData["Title"] = "Manage Departments";
+}
+
+<h2>Department Management</h2>
+
+<div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+    <h4>Add New Department</h4>
+    <form method="post" asp-page-handler="Add">
+        <label>Department Name:</label>
+        <input type="text" name="DepartmentName" required style="width: 250px; margin-right: 10px;" />
+        <button type="submit">Add Department</button>
+    </form>
+</div>
+
+<table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+    <tr style="background-color: #f2f2f2;">
+        <th>ID</th>
+        <th>Department Name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var row in Model.DepartmentList)
+    {
+        <tr>
+            <td>@row["DepartmentID"]</td>
+            <td>@row["DepartmentName"]</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" style="display:inline;">
+                    <input type="hidden" name="DepartmentID" value="@row["DepartmentID"]" />
+                    <button type="submit" onclick="return confirm('Are you sure?');">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<p style="margin-top: 30px; font-style: italic;">Developed by Huynh Nhat Huy - 523c0012</p>

@@ -1,0 +1,50 @@
+@page
+@model WindowsFormApp.Pages.InstructorsModel
+@{
+    ViewData["Title"] = "Manage Instructors";
+}
+
+<h2>Instructor Management</h2>
+
+<div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+    <h4>Add New Instructor</h4>
+    <form method="post" asp-page-handler="Add">
+        <div style="margin-bottom: 10px;">
+            <label>Instructor Name:</label><br />
+            <input type="text" name="InstructorName" required style="width: 250px;" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Department ID:</label><br />
+            <input type="number" name="DepartmentID" required style="width: 100px;" />
+        </div>
+        <button type="submit">Add Instructor</button>
+    </form>
+</div>
+
+<table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+    <tr style="background-color: #f2f2f2;">
+        <th>ID</th>
+        <th>Instructor Name</th>
+        <th>Department ID</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var row in Model.InstructorList)
+    {
+        <tr>
+            <td>@row["InstructorID"]</td>
+            <td>@row["InstructorName"]</td>
+            <td>@row["DepartmentID"]</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" style="display:inline;">
+                    <input type="hidden" name="InstructorID" value="@row["InstructorID"]" />
+                    <button type="submit" onclick="return confirm('Delete this instructor?');">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<p style="margin-top: 30px; font-style: italic;">Developed by Huynh Nhat Huy - 523c0012</p>
