@@ -573,11 +573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/thundercock2/Documents/Github/SoftwareEngineering2026/Lab2/Home/WindowsFormApp/WindowsFormApp.csproj",
+      "projectUniqueName": "/Users/thundercock2/Documents/Github/dump/labs/cong-nghe-phan-mem/Lab2/Home/WindowsFormApp/WindowsFormApp.csproj",
       "projectName": "WindowsFormApp",
-      "projectPath": "/Users/thundercock2/Documents/Github/SoftwareEngineering2026/Lab2/Home/WindowsFormApp/WindowsFormApp.csproj",
+      "projectPath": "/Users/thundercock2/Documents/Github/dump/labs/cong-nghe-phan-mem/Lab2/Home/WindowsFormApp/WindowsFormApp.csproj",
       "packagesPath": "/Users/thundercock2/.nuget/packages/",
-      "outputPath": "/Users/thundercock2/Documents/Github/SoftwareEngineering2026/Lab2/Home/WindowsFormApp/obj/",
+      "outputPath": "/Users/thundercock2/Documents/Github/dump/labs/cong-nghe-phan-mem/Lab2/Home/WindowsFormApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/thundercock2/.nuget/NuGet/NuGet.Config"

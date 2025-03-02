@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eznQjgVcj4I=",
+  "dgSpecHash": "2SA+4pxh104=",
   "success": true,
-  "projectFilePath": "/Users/thundercock2/Documents/Github/SoftwareEngineering2026/Lab2/Home/WindowsFormApp/WindowsFormApp.csproj",
+  "projectFilePath": "/Users/thundercock2/Documents/Github/dump/labs/cong-nghe-phan-mem/Lab2/Home/WindowsFormApp/WindowsFormApp.csproj",
   "expectedPackageFiles": [
     "/Users/thundercock2/.nuget/packages/microsoft.data.sqlite/10.0.5/microsoft.data.sqlite.10.0.5.nupkg.sha512",
     "/Users/thundercock2/.nuget/packages/microsoft.data.sqlite.core/10.0.5/microsoft.data.sqlite.core.10.0.5.nupkg.sha512",
