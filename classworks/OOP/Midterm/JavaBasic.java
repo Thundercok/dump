@@ -1,3 +1,4 @@
+package Midterm;
 
 class JavaBasic {
     public static int divisiblePrime(int arr[], int k) {
