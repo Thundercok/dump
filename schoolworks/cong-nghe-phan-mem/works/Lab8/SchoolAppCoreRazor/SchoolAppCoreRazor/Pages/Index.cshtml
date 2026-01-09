@@ -1,0 +1,27 @@
+@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-5">
+    <div class="p-5 mb-4 bg-light rounded-4 shadow-lg border-0" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);">
+        <div class="container-fluid py-5 text-center">
+            <h1 class="display-4 fw-bolder text-dark mb-3">SaigonRide Academic System</h1>
+            <p class="col-md-8 mx-auto fs-4 text-muted">
+                A containerized ASP.NET Core Razor Pages application built for high-performance software deployment.
+            </p>
+            <hr class="my-4" style="width: 50%; margin: auto; border-color: #adb5bd;">
+            
+            <div class="mt-4 p-4 bg-white rounded-3 shadow-sm d-inline-block">
+                <h3 class="fw-bold text-primary mb-1">Huỳnh Nhật Huy</h3>
+                <h5 class="text-secondary mb-0">Student ID: 523c0012</h5>
+                <p class="mt-2 mb-0 badge bg-dark fs-6">SE Lab 10 - Software Deployment</p>
+            </div>
+
+            <div class="mt-5">
+                <a class="btn btn-primary btn-lg px-5 mx-2 rounded-pill shadow" asp-page="/Students/Index" role="button">Manage Students</a>
+                <a class="btn btn-outline-dark btn-lg px-5 mx-2 rounded-pill shadow-sm" asp-page="/Courses/Index" role="button">View Courses</a>
+            </div>
+        </div>
+    </div>
+</div>
