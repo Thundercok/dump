@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7c9a3675_002D4dbb_002D4141_002Dbeab_002D6a8a1178a7fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BasicMathsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::37B3F786-FC25-472F-8AF2-C60DED9B9830::net10.0::BasicMathTests.BasicMathsTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cf13fd53_002D2c11_002D4c00_002Db28b_002D87c46cf386c2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_Add" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::37B3F786-FC25-472F-8AF2-C60DED9B9830::net10.0::BasicMathTests.BasicMathsTests.Test_Add&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/LoginAutomation" Presentation="&amp;lt;LoginAutomation&amp;gt;" /&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

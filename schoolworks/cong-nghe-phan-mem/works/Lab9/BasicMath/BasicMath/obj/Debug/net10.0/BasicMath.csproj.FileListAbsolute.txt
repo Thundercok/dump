@@ -1,0 +1,15 @@
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/bin/Debug/net10.0/BasicMath
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/bin/Debug/net10.0/BasicMath.deps.json
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/bin/Debug/net10.0/BasicMath.runtimeconfig.json
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/bin/Debug/net10.0/BasicMath.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/bin/Debug/net10.0/BasicMath.pdb
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.AssemblyInfoInputs.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.AssemblyInfo.cs
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.csproj.CoreCompileInputs.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.sourcelink.json
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/refint/BasicMath.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.pdb
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/BasicMath.genruntimeconfig.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab9/BasicMath/BasicMath/obj/Debug/net10.0/ref/BasicMath.dll
