@@ -1,0 +1,44 @@
+﻿@page
+@model WebUI.Pages.IndexModel
+@{
+    ViewData["Title"] = "Student Management";
+}
+
+<div>
+    <h2>School Management System - Students</h2>
+    <form method="post">
+        <label>ID:</label>
+        <input type="text" asp-for="InputId" /><br />
+        
+        <label>Name:</label>
+        <input type="text" asp-for="InputName" /><br />
+        
+        <label>Email:</label>
+        <input type="text" asp-for="InputEmail" /><br />
+
+        <label>Major:</label>
+        <input type="text" asp-for="InputMajor" /><br />
+
+        <button type="submit" asp-page-handler="Add">Add</button>
+        <button type="submit" asp-page-handler="Get">Get</button>
+        <button type="submit" asp-page-handler="Update">Update</button>
+        <button type="submit" asp-page-handler="Delete">Delete</button>
+    </form>
+    
+    <br /><br />
+    
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th><th>Name</th><th>Email</th><th>Major</th>
+        </tr>
+        @foreach (var student in Model.StudentsList)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.Major</td>
+            </tr>
+        }
+    </table>
+</div>

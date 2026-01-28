@@ -1,0 +1,16 @@
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/bin/Debug/net10.0/BLL.deps.json
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/bin/Debug/net10.0/BLL.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/bin/Debug/net10.0/BLL.pdb
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/bin/Debug/net10.0/DAL.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/bin/Debug/net10.0/DAL.pdb
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.csproj.AssemblyReference.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.AssemblyInfoInputs.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.AssemblyInfo.cs
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.csproj.CoreCompileInputs.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.sourcelink.json
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.csproj.Up2Date
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/refint/BLL.dll
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/BLL.pdb
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab4/Home/BLL/obj/Debug/net10.0/ref/BLL.dll
