@@ -1,0 +1,9 @@
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.AssemblyInfoInputs.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.AssemblyInfo.cs
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.csproj.CoreCompileInputs.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.MvcApplicationPartsAssemblyInfo.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.RazorAssemblyInfo.cache
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.RazorAssemblyInfo.cs
+/Users/thundercock2/Documents/Github/dump/schoolworks/cong-nghe-phan-mem/works/Lab3/Home/WebUI/WebUI/obj/Debug/net10.0/WebUI.sourcelink.json
