@@ -1,0 +1,17 @@
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\bin\Debug\net8.0-windows\schedule-management.exe
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\bin\Debug\net8.0-windows\schedule-management.deps.json
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\bin\Debug\net8.0-windows\schedule-management.runtimeconfig.json
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\bin\Debug\net8.0-windows\schedule-management.dll
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\bin\Debug\net8.0-windows\schedule-management.pdb
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule_management.Form1.resources
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.csproj.GenerateResource.cache
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.AssemblyInfoInputs.cache
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.AssemblyInfo.cs
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.csproj.CoreCompileInputs.cache
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.sourcelink.json
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.dll
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\refint\schedule-management.dll
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.pdb
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\schedule-management.genruntimeconfig.cache
+D:\OneDrive - student.tdtu.edu.vn\LAPTOP-7HGCUP3\source-code\winform\schedule-management\obj\Debug\net8.0-windows\ref\schedule-management.dll
