@@ -1,0 +1,289 @@
+<%
+  activeTab = 'admin';
+%>
+<%- include('../partials/head') %>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="sr-panel-title mb-0"><i class="bi bi-speedometer2 me-2"></i>ADMIN DASHBOARD</h5>
+  <div class="d-flex align-items-center gap-2">
+    <span class="badge bg-success"><span class="sr-live-dot"></span> LIVE</span>
+    <small class="text-muted" id="last-updated">–</small>
+    <button class="btn btn-sm sr-btn-refresh" onclick="fetchLive()">
+      <i class="bi bi-arrow-clockwise"></i>
+    </button>
+  </div>
+</div>
+
+<!-- KPI CARDS -->
+<div class="row g-3 mb-4">
+  <div class="col-6 col-lg-3">
+    <div class="sr-kpi-card">
+      <div class="sr-kpi-icon text-success"><i class="bi bi-people-fill"></i></div>
+      <div class="sr-kpi-val" id="kpi-users"><%= userStats.totalUsers %></div>
+      <div class="sr-kpi-label">Tổng người dùng</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="sr-kpi-card">
+      <div class="sr-kpi-icon text-warning"><i class="bi bi-dice-6-fill"></i></div>
+      <div class="sr-kpi-val" id="kpi-games"><%= gameStats.total %></div>
+      <div class="sr-kpi-label">Tổng ván chơi</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="sr-kpi-card">
+      <div class="sr-kpi-icon text-info"><i class="bi bi-cash-stack"></i></div>
+      <div class="sr-kpi-val" id="kpi-wagered"><%= gameStats.totalWagered.toLocaleString('vi-VN') %></div>
+      <div class="sr-kpi-label">Tổng cược (xu)</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="sr-kpi-card">
+      <div class="sr-kpi-icon text-danger"><i class="bi bi-graph-up-arrow"></i></div>
+      <div class="sr-kpi-val" id="kpi-edge">
+        <%= ((gameStats.totalWagered - gameStats.totalPayout) / (gameStats.totalWagered||1) * 100).toFixed(1) %>%
+      </div>
+      <div class="sr-kpi-label">House Edge</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHARTS ROW -->
+<div class="row g-3 mb-4">
+  <div class="col-lg-4">
+    <div class="sr-panel h-100">
+      <div class="sr-panel-title"><i class="bi bi-pie-chart-fill me-2"></i>TÀI / XỈU PHÂN BỐ</div>
+      <canvas id="chartTaiXiu" height="220"></canvas>
+      <div class="d-flex justify-content-center gap-4 mt-2">
+        <span><span class="badge bg-danger me-1">TÀI</span><span id="pct-tai" class="text-muted">–</span></span>
+        <span><span class="badge" style="background:#0099ff" class="me-1">XỈU</span><span id="pct-xiu" class="text-muted">–</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="sr-panel h-100">
+      <div class="sr-panel-title"><i class="bi bi-credit-card-fill me-2"></i>GIAO DỊCH VNPAY</div>
+      <canvas id="chartTx" height="220"></canvas>
+      <div class="mt-2 text-center">
+        <small class="text-muted">Tổng VNPay: <span class="text-warning fw-bold" id="tx-total-vnd"><%= txStats.totalVND.toLocaleString('vi-VN') %> ₫</span></small>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="sr-panel h-100">
+      <div class="sr-panel-title"><i class="bi bi-activity me-2"></i>TREND 20 VÁN GẦN NHẤT</div>
+      <div class="d-flex flex-wrap gap-1 mt-2" id="trend-bar">
+        <% gameStats.recentResults.forEach(r => { %>
+          <span class="sr-hc sr-hc-<%= r %>"><%= r==='tai'?'T':'X' %></span>
+        <% }) %>
+        <% if (!gameStats.recentResults.length) { %>
+          <span class="text-muted" style="font-size:12px">Chưa có dữ liệu</span>
+        <% } %>
+      </div>
+      <hr class="sr-divider"/>
+      <div class="row text-center mt-2">
+        <div class="col-6">
+          <div class="text-danger fw-bold" id="adm-tai-cnt"><%= gameStats.taiCount %></div>
+          <div class="sr-stat-label">Ván TÀI</div>
+        </div>
+        <div class="col-6">
+          <div style="color:#0099ff" class="fw-bold" id="adm-xiu-cnt"><%= gameStats.xiuCount %></div>
+          <div class="sr-stat-label">Ván XỈU</div>
+        </div>
+      </div>
+      <hr class="sr-divider"/>
+      <div class="text-center">
+        <div class="sr-stat-label">Ván / phút (RPM)</div>
+        <div class="fw-bold text-warning" id="adm-rpm"><%= gameStats.rpm %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TABLES ROW -->
+<div class="row g-3 mb-4">
+
+  <!-- RECENT ROUNDS -->
+  <div class="col-lg-7">
+    <div class="sr-panel">
+      <div class="sr-panel-title"><i class="bi bi-table me-2"></i>VÁN GẦN NHẤT</div>
+      <div class="table-responsive">
+        <table class="table table-sm sr-table mb-0">
+          <thead><tr>
+            <th>#</th><th>User</th><th>Xúc xắc</th><th>Tổng</th><th>KQ</th><th>Cược</th><th>P/L</th><th>Thời gian</th>
+          </tr></thead>
+          <tbody id="rounds-tbody">
+            <% recentRounds.forEach(r => { %>
+            <tr>
+              <td class="text-muted">#<%= r.id %></td>
+              <td class="text-muted" style="font-size:10px"><%= r.userId.slice(0,12) %>…</td>
+              <td><%= r.diceEmoji.join(' ') %></td>
+              <td class="text-warning fw-bold"><%= r.sum %></td>
+              <td><span class="sr-hc sr-hc-<%= r.result %>"><%= r.result==='tai'?'T':'X' %></span></td>
+              <td class="text-muted"><%= r.betAmount.toLocaleString('vi-VN') %></td>
+              <td class="fw-bold <%= r.profit >= 0 ? 'text-success':'text-danger' %>">
+                <%= r.profit >= 0 ? '+':'' %><%= r.profit.toLocaleString('vi-VN') %>
+              </td>
+              <td class="text-muted" style="font-size:10px"><%= new Date(r.timestamp).toLocaleTimeString('vi-VN') %></td>
+            </tr>
+            <% }) %>
+            <% if (!recentRounds.length) { %>
+              <tr><td colspan="8" class="text-center text-muted py-3">Chưa có ván nào</td></tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENT TRANSACTIONS -->
+  <div class="col-lg-5">
+    <div class="sr-panel">
+      <div class="sr-panel-title"><i class="bi bi-credit-card-2-front-fill me-2"></i>GIAO DỊCH VNPAY</div>
+      <div class="table-responsive">
+        <table class="table table-sm sr-table mb-0">
+          <thead><tr><th>Order ID</th><th>Số tiền</th><th>Trạng thái</th><th>Thời gian</th></tr></thead>
+          <tbody>
+            <% recentTx.forEach(tx => { %>
+            <tr>
+              <td class="text-muted" style="font-size:10px"><%= tx.orderId %></td>
+              <td class="text-warning"><%= tx.amount.toLocaleString('vi-VN') %> ₫</td>
+              <td>
+                <% if (tx.status === 'success') { %>
+                  <span class="badge bg-success">✓ Thành công</span>
+                <% } else if (tx.status === 'pending') { %>
+                  <span class="badge bg-warning text-dark">⏳ Đang chờ</span>
+                <% } else { %>
+                  <span class="badge bg-danger">✗ Thất bại</span>
+                <% } %>
+              </td>
+              <td class="text-muted" style="font-size:10px"><%= new Date(tx.createdAt).toLocaleTimeString('vi-VN') %></td>
+            </tr>
+            <% }) %>
+            <% if (!recentTx.length) { %>
+              <tr><td colspan="4" class="text-center text-muted py-3">Chưa có giao dịch</td></tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+      <!-- TX KPI Mini -->
+      <div class="row text-center mt-2 g-0">
+        <div class="col-4">
+          <div class="text-success fw-bold"><%= txStats.success %></div>
+          <div class="sr-stat-label">Thành công</div>
+        </div>
+        <div class="col-4">
+          <div class="text-warning fw-bold"><%= txStats.pending %></div>
+          <div class="sr-stat-label">Đang chờ</div>
+        </div>
+        <div class="col-4">
+          <div class="text-danger fw-bold"><%= txStats.failed %></div>
+          <div class="sr-stat-label">Thất bại</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- USER TABLE -->
+<div class="sr-panel mb-3">
+  <div class="sr-panel-title"><i class="bi bi-person-lines-fill me-2"></i>NGƯỜI DÙNG HOẠT ĐỘNG</div>
+  <div class="table-responsive">
+    <table class="table table-sm sr-table mb-0">
+      <thead><tr>
+        <th>User ID</th><th>Số dư</th><th>Ván đã chơi</th><th>Tổng cược</th><th>Win Rate</th><th>Net P/L</th><th>Lần cuối</th>
+      </tr></thead>
+      <tbody>
+        <% allUsers.forEach(u => { %>
+        <tr>
+          <td class="text-muted" style="font-size:10px"><%= u.id.slice(0,16) %>…</td>
+          <td class="text-success fw-bold"><%= u.balance.toLocaleString('vi-VN') %></td>
+          <td class="text-warning"><%= u.gamesPlayed %></td>
+          <td class="text-muted"><%= u.totalBets.toLocaleString('vi-VN') %></td>
+          <td><span class="badge <%= parseFloat(u.winRate) >= 50 ? 'bg-success' : 'bg-danger' %>"><%= u.winRate %>%</span></td>
+          <td class="fw-bold <%= u.netProfit >= 0 ? 'text-success':'text-danger' %>">
+            <%= u.netProfit >= 0 ? '+':'' %><%= u.netProfit.toLocaleString('vi-VN') %>
+          </td>
+          <td class="text-muted" style="font-size:10px"><%= new Date(u.lastActive).toLocaleTimeString('vi-VN') %></td>
+        </tr>
+        <% }) %>
+        <% if (!allUsers.length) { %>
+          <tr><td colspan="7" class="text-center text-muted py-3">Chưa có người dùng</td></tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('../partials/foot') %>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+// ── Initial chart data from server ─────────────────────────
+const initData = <%- chartData %>;
+
+// ── Tai/Xiu Doughnut ───────────────────────────────────────
+const ctxTX = document.getElementById('chartTaiXiu').getContext('2d');
+const taiXiuChart = new Chart(ctxTX, {
+  type: 'doughnut',
+  data: {
+    labels: initData.taiXiu.labels,
+    datasets: [{ data: initData.taiXiu.values, backgroundColor: ['#cc0000','#0077cc'], borderColor: '#1a0010', borderWidth: 3 }]
+  },
+  options: {
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed}` } } },
+    cutout: '65%'
+  }
+});
+
+// ── TX Status Doughnut ─────────────────────────────────────
+const ctxTxStatus = document.getElementById('chartTx').getContext('2d');
+const txChart = new Chart(ctxTxStatus, {
+  type: 'doughnut',
+  data: {
+    labels: initData.txStatus.labels,
+    datasets: [{ data: initData.txStatus.values, backgroundColor: ['#198754','#ffc107','#dc3545'], borderColor: '#0a0012', borderWidth: 3 }]
+  },
+  options: {
+    plugins: { legend: { labels: { color: '#888', font: { size: 11 } } } },
+    cutout: '60%'
+  }
+});
+
+// ── Live polling ───────────────────────────────────────────
+async function fetchLive() {
+  try {
+    const r = await fetch('/admin/api/stats');
+    const d = await r.json();
+
+    // KPI cards
+    document.getElementById('kpi-users').textContent   = d.user.totalUsers;
+    document.getElementById('kpi-games').textContent   = d.game.total;
+    document.getElementById('kpi-wagered').textContent = d.game.totalWagered.toLocaleString('vi-VN');
+    const edge = d.game.totalWagered > 0
+      ? ((d.game.totalWagered - d.game.totalPayout) / d.game.totalWagered * 100).toFixed(1)
+      : '0.0';
+    document.getElementById('kpi-edge').textContent = edge + '%';
+
+    // Chart update
+    taiXiuChart.data.datasets[0].data = [d.game.taiCount, d.game.xiuCount];
+    taiXiuChart.update();
+    txChart.data.datasets[0].data = [d.tx.success, d.tx.pending, d.tx.failed];
+    txChart.update();
+
+    // Percentages
+    const tot = d.game.taiCount + d.game.xiuCount || 1;
+    document.getElementById('pct-tai').textContent = (d.game.taiCount/tot*100).toFixed(1)+'%';
+    document.getElementById('pct-xiu').textContent = (d.game.xiuCount/tot*100).toFixed(1)+'%';
+
+    // Counts
+    document.getElementById('adm-tai-cnt').textContent = d.game.taiCount;
+    document.getElementById('adm-xiu-cnt').textContent = d.game.xiuCount;
+    document.getElementById('adm-rpm').textContent     = d.game.rpm;
+
+    document.getElementById('last-updated').textContent = 'Cập nhật: ' + new Date(d.ts).toLocaleTimeString('vi-VN');
+  } catch(e) { console.error('Live stats error', e); }
+}
+
+fetchLive();
+setInterval(fetchLive, 5000); // auto-refresh every 5s
+</script>

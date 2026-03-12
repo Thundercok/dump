@@ -1,0 +1,107 @@
+<%
+  activeTab = 'deposit';
+%>
+<%- include('../partials/head') %>
+
+<div class="row g-3">
+
+  <!-- PACKAGE SELECTION -->
+  <div class="col-lg-7">
+    <div class="sr-panel">
+      <div class="sr-panel-title"><i class="bi bi-wallet2 me-2"></i>NẠP XU QUA VNPAY SANDBOX</div>
+
+      <div class="alert sr-alert-info mb-3">
+        <i class="bi bi-info-circle-fill me-2"></i>
+        Đây là môi trường <strong>VNPay Sandbox</strong> – không có tiền thật.
+        Sử dụng thẻ test: <code>9704198526191432198</code> / <code>07/15</code> / OTP: <code>123456</code>
+      </div>
+
+      <form action="/payment/create" method="POST">
+        <div class="row g-3 mb-4">
+          <% packages.forEach((pkg, i) => { %>
+          <div class="col-6">
+            <label class="sr-pkg-card w-100 <%= pkg.popular ? 'sr-pkg-popular' : '' %>">
+              <input type="radio" name="packageIndex" value="<%= i %>" class="d-none" <%= i===1?'checked':'' %>>
+              <% if (pkg.popular) { %><div class="sr-pkg-badge">PHỔ BIẾN ⭐</div><% } %>
+              <div class="sr-pkg-xu"><%= pkg.xu.toLocaleString('vi-VN') %> xu</div>
+              <div class="sr-pkg-vnd"><%= pkg.vnd.toLocaleString('vi-VN') %> ₫</div>
+              <div class="sr-pkg-rate text-muted">1 xu = 1 ₫</div>
+            </label>
+          </div>
+          <% }) %>
+        </div>
+        <button type="submit" class="sr-roll-btn w-100">
+          <i class="bi bi-credit-card-fill me-2"></i>THANH TOÁN QUA VNPAY
+        </button>
+        <div class="text-center mt-2">
+          <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-VNPAY-QR-1.png"
+               alt="VNPay" height="28" class="opacity-75"/>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TRANSACTION HISTORY -->
+  <div class="col-lg-5">
+    <div class="sr-panel">
+      <div class="sr-panel-title"><i class="bi bi-receipt me-2"></i>LỊCH SỬ GIAO DỊCH</div>
+      <% if (txHistory.length) { %>
+      <div class="table-responsive">
+        <table class="table table-sm sr-table mb-0">
+          <thead><tr><th>Order</th><th>Số tiền</th><th>Trạng thái</th></tr></thead>
+          <tbody>
+            <% txHistory.forEach(tx => { %>
+            <tr>
+              <td class="text-muted" style="font-size:10px"><%= tx.orderId.slice(-8) %>…</td>
+              <td class="text-warning fw-bold"><%= tx.amount.toLocaleString('vi-VN') %> ₫</td>
+              <td>
+                <% if (tx.status === 'success') { %>
+                  <span class="badge bg-success">✓ Thành công</span>
+                <% } else if (tx.status === 'pending') { %>
+                  <span class="badge bg-warning text-dark">⏳ Đang chờ</span>
+                <% } else { %>
+                  <span class="badge bg-danger">✗ Thất bại</span>
+                <% } %>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+      <% } else { %>
+        <div class="text-center text-muted py-4">
+          <i class="bi bi-inbox" style="font-size:32px"></i><br/>
+          Chưa có giao dịch nào
+        </div>
+      <% } %>
+    </div>
+
+    <!-- PAYMENT METHODS -->
+    <div class="sr-panel mt-3">
+      <div class="sr-panel-title"><i class="bi bi-shield-lock-fill me-2"></i>PHƯƠNG THỨC THANH TOÁN</div>
+      <div class="d-flex flex-wrap gap-2 mt-1">
+        <span class="badge bg-secondary p-2">💳 ATM nội địa</span>
+        <span class="badge bg-secondary p-2">🏦 Internet Banking</span>
+        <span class="badge bg-secondary p-2">📱 QR Code</span>
+        <span class="badge bg-secondary p-2">💰 Visa/Master</span>
+      </div>
+      <div class="mt-2" style="font-size:11px;color:#555">
+        <i class="bi bi-lock-fill me-1 text-success"></i>Mã hóa SSL 256-bit · Bảo mật bởi VNPay
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/foot') %>
+<script>
+// Highlight selected package card
+document.querySelectorAll('.sr-pkg-card').forEach(card => {
+  const input = card.querySelector('input[type="radio"]');
+  if (input.checked) card.classList.add('selected');
+  card.addEventListener('click', () => {
+    document.querySelectorAll('.sr-pkg-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+    input.checked = true;
+  });
+});
+</script>

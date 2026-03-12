@@ -1,0 +1,190 @@
+<% activeTab = 'game'; %>
+<%- include('partials/head') %>
+
+<!-- PROMO BANNER -->
+<div class="sr-promo-banner d-flex justify-content-between align-items-center mb-3">
+  <div>🎁 Nạp lần đầu nhận ngay <strong class="text-warning">+100%</strong> lên đến <strong class="text-warning">500K MixiCoins!</strong></div>
+  <a href="/payment/deposit" class="btn btn-warning btn-sm fw-bold sr-blink">NẠP NGAY</a>
+</div>
+
+<!-- LIVE STATS ROW -->
+<div class="row g-2 mb-3">
+  <div class="col-4">
+    <div class="sr-stat-card text-center">
+      <div class="sr-stat-val text-warning" id="stat-online">–</div>
+      <div class="sr-stat-label">🟢 Mixi Fans Online</div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="sr-stat-card text-center">
+      <div class="sr-stat-val" style="color:#b44eff" id="stat-games">–</div>
+      <div class="sr-stat-label">🎲 Ván đã chơi</div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="sr-stat-card text-center">
+      <div class="sr-stat-val text-success" id="stat-wagered">–</div>
+      <div class="sr-stat-label">🪙 Tổng cược</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+
+  <!-- DICE ARENA -->
+  <div class="col-lg-6">
+    <div class="sr-panel h-100">
+      <div class="sr-panel-title"><i class="bi bi-dice-6-fill me-2"></i>LẮC XÚC XẮC TRỰC TIẾP</div>
+
+      <div class="d-flex justify-content-center gap-3 my-3" id="dice-row">
+        <div class="sr-die" id="d1">⚀</div>
+        <div class="sr-die" id="d2">⚀</div>
+        <div class="sr-die" id="d3">⚀</div>
+      </div>
+
+      <div class="sr-sum-area text-center mb-3">
+        <div class="sr-sum-label">TỔNG ĐIỂM</div>
+        <div class="sr-sum-val" id="sum-val">–</div>
+        <div class="sr-sum-result" id="sum-res">&nbsp;</div>
+      </div>
+
+      <div class="sr-history-bar d-flex flex-wrap gap-1 align-items-center">
+        <span class="sr-hist-label me-1">Lịch sử:</span>
+        <div id="hist-row" class="d-flex flex-wrap gap-1">
+          <% history.forEach(r => { %>
+            <span class="sr-hc sr-hc-<%= r.result %>"><%= r.result === 'tai' ? 'T' : 'X' %></span>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BET PANEL -->
+  <div class="col-lg-6">
+    <div class="sr-panel h-100">
+      <div class="sr-panel-title"><i class="bi bi-coin me-2"></i>ĐẶT CƯỢC MIXICOINS</div>
+
+      <div class="sr-section-label mb-2">▶ CHỌN MỨC CƯỢC</div>
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <button class="sr-chip" data-val="100"   onclick="pickChip(this)">100</button>
+        <button class="sr-chip" data-val="500"   onclick="pickChip(this)">500</button>
+        <button class="sr-chip" data-val="1000"  onclick="pickChip(this)">1K</button>
+        <button class="sr-chip" data-val="5000"  onclick="pickChip(this)">5K</button>
+        <button class="sr-chip" data-val="10000" onclick="pickChip(this)">10K</button>
+        <button class="sr-chip" data-val="50000" onclick="pickChip(this)">MAX</button>
+      </div>
+
+      <div class="sr-bet-display d-flex justify-content-between align-items-center mb-3">
+        <span class="sr-muted-label">CƯỢC:</span>
+        <span class="sr-bet-val" id="bet-disp">0 🪙</span>
+      </div>
+
+      <div class="sr-section-label mb-2">▶ CHỌN TÀI / XỈU</div>
+      <div class="row g-2 mb-3">
+        <div class="col-6">
+          <div class="sr-cb sr-cb-tai" id="btn-tai" onclick="pickSide('tai')">
+            <span class="sr-cb-odds">x1.95</span>
+            <span class="sr-cb-label">TÀI 🔥</span>
+            <span class="sr-cb-sub">Tổng 11 – 17</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="sr-cb sr-cb-xiu" id="btn-xiu" onclick="pickSide('xiu')">
+            <span class="sr-cb-odds">x1.95</span>
+            <span class="sr-cb-label">XỈU 💎</span>
+            <span class="sr-cb-sub">Tổng 4 – 10</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="sr-roll-btn w-100" id="roll-btn" onclick="doRoll()" disabled>
+        🎲 &nbsp;LĂN NGAY
+      </button>
+      <div class="text-center mt-2" style="font-size:11px;color:#553366">
+        <i class="bi bi-shield-check me-1"></i>Giả lập · Không có tiền thật
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── LUCKY SPIN (Freestyle Feature) ───────────────────────── -->
+<div class="sr-panel mt-3">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="sr-panel-title mb-0">🎡 LUCKY SPIN – Quay thưởng hàng ngày</div>
+    <span class="badge" style="background:linear-gradient(90deg,#7700cc,#aa44ff);font-size:10px">FREE mỗi ngày</span>
+  </div>
+  <div class="row align-items-center g-3">
+    <div class="col-md-5 text-center">
+      <div class="mx-wheel-wrap mb-3">
+        <div class="mx-wheel-pin">▼</div>
+        <canvas id="spinCanvas" width="240" height="240"></canvas>
+      </div>
+      <button class="mx-spin-btn w-100" id="spin-btn" onclick="doSpin()">
+        🎡 QUAY NGAY – MIỄN PHÍ
+      </button>
+      <div class="mx-cooldown mt-2" id="spin-cooldown"></div>
+    </div>
+    <div class="col-md-7">
+      <div class="sr-section-label mb-2">🎁 PHẦN THƯỞNG CÓ THỂ NHẬN</div>
+      <div class="row g-2" id="prize-list">
+        <div class="col-6"><div class="sr-stat-card text-center py-2"><div class="sr-stat-val text-warning">500 🪙</div><div class="sr-stat-label">Cơ bản</div></div></div>
+        <div class="col-6"><div class="sr-stat-card text-center py-2"><div class="sr-stat-val text-warning">1,000 🪙</div><div class="sr-stat-label">Bạc</div></div></div>
+        <div class="col-6"><div class="sr-stat-card text-center py-2"><div class="sr-stat-val" style="color:#b44eff">2,000 🪙</div><div class="sr-stat-label">Vàng</div></div></div>
+        <div class="col-6"><div class="sr-stat-card text-center py-2"><div class="sr-stat-val" style="color:#00e5ff">5,000 🪙</div><div class="sr-stat-label">Kim cương</div></div></div>
+        <div class="col-6"><div class="sr-stat-card text-center py-2"><div class="sr-stat-val text-danger">X2 Cược</div><div class="sr-stat-label">Nhân đôi!</div></div></div>
+        <div class="col-6"><div class="sr-stat-card text-center py-2"><div class="sr-stat-val text-success">10,000 🪙</div><div class="sr-stat-label">🦊 MIXI JACKPOT</div></div></div>
+      </div>
+      <div id="spin-result-area" class="text-center mt-3" style="min-height:40px"></div>
+    </div>
+  </div>
+</div>
+
+<!-- HISTORY TABLE -->
+<div class="sr-panel mt-3">
+  <div class="sr-panel-title"><i class="bi bi-clock-history me-2"></i>LỊCH SỬ CỦA BẠN</div>
+  <div class="table-responsive">
+    <table class="table table-sm sr-table mb-0">
+      <thead><tr>
+        <th>#</th><th>Xúc xắc</th><th>Tổng</th><th>Kết quả</th><th>Cược 🪙</th><th>P/L</th>
+      </tr></thead>
+      <tbody id="history-tbody">
+        <% history.forEach(r => { %>
+        <tr>
+          <td class="text-muted">#<%= r.id %></td>
+          <td><%= r.diceEmoji.join(' ') %></td>
+          <td class="fw-bold text-warning"><%= r.sum %></td>
+          <td><span class="sr-hc sr-hc-<%= r.result %>"><%= r.result === 'tai' ? 'TÀI' : 'XỈU' %></span></td>
+          <td class="text-muted"><%= r.betAmount.toLocaleString('vi-VN') %></td>
+          <td class="fw-bold <%= r.profit >= 0 ? 'text-success' : 'text-danger' %>">
+            <%= r.profit >= 0 ? '+' : '' %><%= r.profit.toLocaleString('vi-VN') %>
+          </td>
+        </tr>
+        <% }) %>
+        <% if (!history.length) { %>
+        <tr><td colspan="6" class="text-center text-muted py-3">Chưa có ván nào – hãy chơi thôi! 🎲</td></tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- RESULT MODAL -->
+<div class="modal fade" id="resultModal" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content sr-modal-content text-center">
+      <div class="modal-body py-4 px-4">
+        <div id="res-emoji" style="font-size:56px" class="mb-2"></div>
+        <div id="res-title" class="sr-modal-title mb-2"></div>
+        <div id="res-info" class="text-muted mb-3" style="font-size:14px;white-space:pre-line"></div>
+        <div id="res-amount" class="sr-modal-amount mb-3"></div>
+        <button class="sr-btn-close-modal" data-bs-dismiss="modal">CHƠI TIẾP ▶</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container position-fixed bottom-0 start-0 p-3" id="toast-container" style="z-index:1100"></div>
+
+<%- include('partials/foot') %>
+<script src="/js/game.js"></script>
