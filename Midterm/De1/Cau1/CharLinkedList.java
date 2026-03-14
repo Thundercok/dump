@@ -32,7 +32,7 @@ public class CharLinkedList implements ListInterface {
             return -1;
 
         Node current = head;
-        char maxVal = head.head.getData();
+        char maxVal = head.getData();
         int maxPos = 0;
         int currentPos = 0;
 

@@ -10,6 +10,7 @@ public class MyLinkedList<E> implements ListInterface<E> {
     }
 
     @Override
+
     public void addFirst(E item) {
         head = new node<E>(item, head);
         numNode++;
