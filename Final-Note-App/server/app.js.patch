@@ -1,0 +1,14 @@
+const fs = require('fs');
+
+// Read the compiled app.js
+const appJsPath = '/app/dist/app.js';
+const appJs = fs.readFileSync(appJsPath, 'utf8');
+
+// Remove any lines that reference search_routes_1
+const patchedJs = appJs.split('\n').filter(line => !line.includes('search_routes_1')).join('\n');
+
+// Write the patched file back
+fs.writeFileSync(appJsPath, patchedJs);
+console.log('Successfully patched app.js to remove search_routes_1 references');
+
+// Patch completed successfully 

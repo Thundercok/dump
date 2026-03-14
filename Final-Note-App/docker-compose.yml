@@ -1,0 +1,100 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: noteapp
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-ppassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Legacy NodeJS server (commented out to avoid conflicts)
+  # server:
+  #   build: ./server
+  #   container_name: server
+  #   ports:
+  #     - "5500:5500"
+  #   environment:
+  #     DB_HOST: mysql
+  #     DB_USER: root
+  #     DB_PASS: password
+  #     DB_NAME: noteapp
+  #     PORT: 5500
+  #     JWT_SECRET: your-secret-key
+  #     EMAIL_HOST: smtp.mailtrap.io
+  #     EMAIL_PORT: 2525
+  #     EMAIL_USER: your-mailtrap-user
+  #     EMAIL_PASS: your-mailtrap-password
+  #     CLIENT_URL: http://localhost:3000
+  #   volumes:
+  #     - ./server:/app
+  #     - /app/node_modules
+  #     - uploads:/app/uploads
+  #   command: ["sh", "-c", "/wait-for-it.sh mysql:3306 -- npm start"]
+  #   depends_on:
+  #     mysql:
+  #       condition: service_healthy
+
+  # TypeScript backend (primary backend)
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server.fix
+    container_name: server
+    ports:
+      - "5500:5500"
+    environment:
+      DB_HOST: mysql
+      DB_USER: root
+      DB_PASS: password
+      DB_NAME: noteapp
+      PORT: 5500
+      JWT_SECRET: your-secret-key
+      EMAIL_HOST: smtp.mailtrap.io
+      EMAIL_PORT: 2525
+      EMAIL_USER: your-mailtrap-user
+      EMAIL_PASS: your-mailtrap-password
+      CLIENT_URL: http://localhost:3000
+      ALLOWED_ORIGINS: http://localhost:3000,https://1a79-2a09-bac5-d46f-e6-00-17-222.ngrok-free.app,*.ngrok-free.app
+      NODE_ENV: development
+      STRICT_AUTH_CHECK: "false"
+    volumes:
+      - uploads:/app/uploads
+    command: ["node", "/app/dist/app.js"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client.fix
+    container_name: client
+    restart: always
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_API_URL=http://localhost:5500
+      - WATCHPACK_POLLING=true
+      - FAST_REFRESH=false
+      - CHOKIDAR_USEPOLLING=false
+    ports:
+      - "3000:3000"
+    volumes:
+      - client-node-modules:/app/node_modules
+    depends_on:
+      - server
+
+volumes:
+  uploads:
+  mysql-data:
+  client-node-modules:

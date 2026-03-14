@@ -1,0 +1,28 @@
+FROM node:16-alpine
+
+WORKDIR /app
+
+# Install dependencies including netcat
+RUN apk add --no-cache netcat-openbsd
+
+# Copy package files
+COPY ./server/package*.json ./
+COPY ./server/tsconfig.json ./
+
+# Install dependencies
+RUN npm install
+RUN npm install @apollo/server express4 graphql graphql-upload@15.0.2 @types/graphql-upload dataloader
+
+# Copy source code (already fixed)
+COPY ./server ./
+
+# Build the TypeScript code
+RUN npm run build
+
+# Setup wait-for-it script
+COPY ./wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
+
+EXPOSE 5500
+
+CMD ["node", "dist/app.js"]
