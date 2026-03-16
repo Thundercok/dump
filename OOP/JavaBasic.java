@@ -8,7 +8,7 @@ class JavaBasic {
         }
         if (p == -1) return new int[0];
         int count = 0;
-        for (int num : arr) {
+        for (int œnum : arr) {
             if (num % p == 0) count ++
         }
      }
