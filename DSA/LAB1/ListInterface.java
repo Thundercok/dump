@@ -11,6 +11,8 @@ public interface ListInterface<E> {
 
     public E removeAfter(Node<E> curr) throws NoSuchElementException;
 
+    public E removeCurr(Node<E> curr) throws NoSuchElementException;
+
     public void print();
 
     public boolean isEmpty();
@@ -22,4 +24,5 @@ public interface ListInterface<E> {
     public int size();
 
     public boolean contains(E item);
+
 }
