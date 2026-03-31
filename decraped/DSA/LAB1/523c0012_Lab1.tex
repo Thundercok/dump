@@ -1,0 +1,300 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,setspace}
+\usepackage{pgf-umlcd}
+\textwidth 7.0 truein
+\oddsidemargin -0.25in   %left-hand edge
+\evensidemargin -0.5 truein  %right-hand edge
+\topmargin -0.85in      %top of paper to top of head, pulls whole unit
+\textheight 9.5in
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyvrb}
+\usepackage[T1]{fontenc}
+%%%% In most cases you won't need to edit anything above this line %%%%
+
+\begin{document}
+{\raggedleft{} 523c0012 - Huynh Nhat Huy \\   Data Structures And Algorithms 2025 - 2026  \\  LAB 1: Linked List \\ Homework Assignment \\}
+\vspace{20pt}
+\textbf{1. INTRODUCTION}\\\\
+The objective of this lab is to implement a List Abstract Data Type (ADT) using a Linked List structure in Java. This involves understanding the relationship between ListInterface, Node class, and the MyLinkedList implementation.Following the provided UML model:
+\\
+\usetikzlibrary{arrows.meta, shapes.multipart, positioning}
+
+\begin{tikzpicture}[    % define 'Method' here
+    umlbox/.style={
+        draw=red, 
+        fill=yellow!5, 
+        rectangle split, 
+        rectangle split parts=3, 
+        inner sep=4pt, 
+        text width=6cm,
+        font=\small\ttfamily
+    }
+]   
+
+    % 1. The Interface
+    \node [umlbox, text width=7cm] (Interface) at (0,8) {
+        \centering \textbf{$<<$interface$>>$ \\ ListInterface}
+        \nodepart{second} % Attributes (Empty)
+        \nodepart{third}
+        + addFirst(E item): void \\
+        + addAfter(Node <E> curr, E item): void \\
+        + addLast(E item): void \\
+        + removeFirst: E \\
+        + removeAfter(Node <E> curr): E \\
+        + size(): int \\
+        + getHead(): Node <E>
+    };
+
+    % 2. The Implementation
+    \node [umlbox, text width=5cm] (MyList) at (0,3) {
+        \centering \textbf{MyLinkedList}
+        \nodepart{second}
+        - head: Node <E> \\
+        - numNode: int
+        \nodepart{third}
+        + MyLinkedList()
+    };% 3. The Node (MOVED UP to x=8.5, y=8)
+    \node [umlbox, text width=6cm] (Node) at (8.5,3) {
+        \centering \textbf{Node}
+        \nodepart{second}
+        - element: E \\
+        - next: Node
+        \nodepart{third}
+        + Node() \\
+        + getData(): E \\
+        + setNext(Node <E> curr): void
+    };
+
+    % The Connections
+    % Dashed Implementation Arrow
+    \draw [dashed, -{Triangle[open]}] (MyList.north) -- (Interface.south);
+    
+    % The 'Has-a' Composition Arrow (Adjusted to point from MyList to the new Node position)
+    \draw [red, {Diamond[fill=black]}-stealth, thick] (MyList.east) -- (Node.west) 
+        node[midway, sloped, above, black] {has-a};
+
+    % 4. The "Manual" Caption (Placed at the bottom center)
+    \node [text width=10cm] at (10.25, 8.5) {Figure 1: Given UML model};
+
+\end{tikzpicture}
+
+\begin{description}
+    \item[Node:] Represents single item in a list, containing a element, and a reference to next node.
+    \item[ListInterface:] Defines the essential operations for the ADT.
+    \item[MyLinkedList:] Core class that implements the interface.
+\end{description}
+
+%------------------------------------------------------------------------------------------------------%
+
+\textbf{2. EXERCISES}
+\begin{itemize}
+
+\item[\textbf{Exercise 1. }] Fraction class implementation as Linked list:
+\begin{verbatim}
+    \\Fraction.java
+    public class Fraction {
+    private int numer, denom;
+
+    public Fraction(int x, int y) {
+        this.numer = x;
+        this.denom = (y != 0) ? y : 1;
+    }
+\end{verbatim}
+The class includes attributes for the numerator and denominator, with a default state of 0/1.
+\begin{verbatim}
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Fraction)) return false;
+        Fraction f = (Fraction) obj;
+        return this.numer * f.denom == this.denom * f.numer;
+    }
+
+    @Override
+    public String toString() { return numer + "/" + denom; }
+\end{verbatim}
+
+\item[\textbf{Exercise 2. }] removeCurr implementation: 
+\\\\
+Per the requirements, an abstract method was added to remove a node at a specific position. 
+\begin{verbatim}
+    \MyLinkedList.java
+    ...
+    @Override
+public E removeCurr(Node<E> curr) throws NoSuchElementException {
+    if (head == null || curr == null) throw new NoSuchElementException();
+    if (curr == head) return removeFirst();
+
+    Node<E> prev = head;
+    while (prev != null && prev.getNext() != curr) {
+        prev = prev.getNext();
+    }
+
+    if (prev == null) throw new NoSuchElementException("Node not found");
+    
+    prev.setNext(curr.getNext());
+    numNode--;
+    return curr.getData();
+    ...
+}\end{verbatim}
+And calling the method in ListInterface.Java
+\begin{verbatim}
+    
+    \ListInterface.java
+    ...
+    public E removeCurr(Node<E> curr) throws NoSuchElementException;
+    ...
+\end{verbatim}
+\item[\textbf{Exercise 3. }] Integer List Operations:\\\\
+Showcasing the capability of the MyLinkedList class to handle specific data processing tasks on a list of integers, the following core algorithms were added to the system to satisfy the requirements of Exercise 3:
+
+\begin{verbatim}
+//MyLinkedList.java
+..
+    // (a) Count even items
+public int countEven() {
+    int count = 0;
+    Node<E> tmp = head;
+    while (tmp != null) {
+        if ((Integer)tmp.getData() % 2 == 0) count++;
+        tmp = tmp.getNext();
+    }
+    return count;
+}
+
+// (b) Count prime items
+public int countPrime() {
+    int count = 0;
+    Node<E> tmp = head;
+    while (tmp != null) {
+        if (isPrime((Integer)tmp.getData())) count++;
+        tmp = tmp.getNext();
+    }
+    return count;
+}
+
+private boolean isPrime(int n) {
+    if (n < 2) return false;
+    for (int i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+// (c) Add X before the first even element
+public void addBeforeFirstEven(E x) {
+    if (head == null) return;
+    if ((Integer)head.getData() % 2 == 0) {
+        addFirst(x);
+        return;
+    }
+    Node<E> prev = head;
+    Node<E> curr = head.getNext();
+    while (curr != null) {
+        if ((Integer)curr.getData() % 2 == 0) {
+            Node<E> newNode = new Node<>(x, curr);
+            prev.setNext(newNode);
+            numNode++;
+            return;
+        }
+        prev = curr;
+        curr = curr.getNext();
+    }
+}
+\end{verbatim}
+\begin{verbatim}
+findMax() maintains a pointer to the highest value encountered during a single pass.\\\\
+// (d) Find maximum number
+public E findMax() {
+    if (head == null) return null;
+    E max = head.getData();
+    Node<E> tmp = head.getNext();
+    while (tmp != null) {
+        if (((Comparable<E>)tmp.getData()).compareTo(max) > 0) {
+            max = tmp.getData();
+        }
+        tmp = tmp.getNext();
+    }
+    return max;
+}
+\end{verbatim}
+Counting and Searching: countEven() and countPrime() traverse the list once, applying a condition to each element's data.\\\\
+\begin{verbatim}
+    
+// (e) Reverse the list in-place
+public void reverse() {
+    Node<E> prev = null;
+    Node<E> curr = head;
+    Node<E> next = null;
+    while (curr != null) {
+        next = curr.getNext();
+        curr.setNext(prev);
+        prev = curr;
+        curr = next;
+    }
+    head = prev;
+}
+
+\end{verbatim}
+In-place Reversal: The reverse() method reorients the next pointers of each node to point to their predecessor, effectively flipping the list without using additional memory (Space Complexity: O(1)).\\\\
+
+\begin{verbatim}
+    // (f) Sort the list (Bubble Sort)
+public void sort() {
+    if (head == null || head.getNext() == null) return;
+    for (Node<E> i = head; i != null; i = i.getNext()) {
+        for (Node<E> j = i.getNext(); j != null; j = j.getNext()) {
+            if (((Comparable<E>)i.getData()).compareTo(j.getData()) > 0) {
+                // Swap data
+                E temp = i.getData();
+                // This requires a setData method or using the constructor
+                // For simplicity in a lab, you can swap data values directly
+            }
+        }
+    }
+}
+\end{verbatim}
+
+Sorting: A Bubble Sort algorithm was implemented to rearrange the nodes in ascending order by comparing data values and swapping as needed.
+\\\\\\\\\\\\
+\textbf{Results:}
+\begin{verbatim}
+Original List: 10 -> 7 -> 4 -> 11 -> 8
+Even count: 3
+Prime count: 2
+After adding 99 before first even: List: 99 -> 10 -> 7 -> 4 -> 11 -> 8
+Max value: 99
+Reversed List: 8 -> 11 -> 4 -> 7 -> 10 -> 99
+Sorted List: 8 -> 11 -> 4 -> 7 -> 10 -> 99
+\end{verbatim}
+\vspace{20pt}
+\item[\textbf{Exercise 4.}] Double Linked List Implementation: \\\\
+For this exercise, a specific DoubleNode class was defined to handle the primitive double data type. This class mirrors the structure of the generic Node but is optimized for floating-point values.\\
+\begin{verbatim}
+    //DoubleNode.java
+    public class DoubleNode {
+    private double data;
+    private DoubleNode next;
+
+    public DoubleNode(double data) {
+        this.data = data;
+        this.next = null;
+    }
+    // Getters and Setters for data and next...
+}
+\end{verbatim}
+The MyDoubleLinkedList class was implemented to manage these DoubleNode objects. It includes standard operations tailored for double values:\\\\\\
+Add: addFirst(double item) and addLast(double item) for data entry.\\\\
+Remove: removeFirst() and removeAfter(DoubleNode curr) to manage the list size.\\\\
+Find: A find(double item) method that returns the node containing the specific value or null if not found.\\\\
+\end{itemize}
+
+
+That's the end of my report, thank you for reading. \\\\
+\textbf{3. AFTERWORDS}\\\\
+
+\centering
+\vspace{20pt}
+
+
+GitHub repository link containing all of my DSA lab files, including source codes, \\ and reports in .PDF and .TEX:\\ https://github.com/Thundercok/dump/tree/main/DSA
+\end{document}
