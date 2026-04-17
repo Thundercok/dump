@@ -1,18 +1,7 @@
 ﻿@model IEnumerable<DAL.Models.Student>
 
-<h2>Student Directory</h2>
-<a href="/Student/Create" class="btn btn-primary mb-3">Add New Student</a>
-
-<table class="table table-bordered">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Major</th>
-    </tr>
-    </thead>
-    <tbody>
+@if (Model != null && Model.Any())
+{
     @foreach (var item in Model)
     {
         <tr>
@@ -22,5 +11,10 @@
             <td>@item.Major</td>
         </tr>
     }
-    </tbody>
-</table>
+}
+else
+{
+    <tr>
+        <td colspan="4" class="text-center">No data available right now.</td>
+    </tr>
+}

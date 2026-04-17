@@ -1,26 +1,26 @@
-using DAL.Context;
-using DAL.Models;
 using System.Collections.Generic;
 using System.Linq;
+using DAL.Models;
+using DAL.Context; // <--- This is the magic line that fixes the error!
 
-namespace DAL.Repositories
+namespace DAL.Repositories 
 {
-    public class StudentRepository
+    public class TeacherRepository 
     {
         private readonly SchoolDbContext _context;
 
-        public StudentRepository(SchoolDbContext context)
+        public TeacherRepository(SchoolDbContext context) 
         {
             _context = context;
         }
 
-        public List<Student> GetAll() => _context.Students.ToList();
+        public List<Teacher> GetAll() => _context.Teachers.ToList();
         
-        public Student GetById(int id) => _context.Students.Find(id);
+        public Teacher GetById(int id) => _context.Teachers.Find(id);
         
-        public void Add(Student student)
+        public void Add(Teacher teacher)
         {
-            _context.Students.Add(student);
+            _context.Teachers.Add(teacher);
             _context.SaveChanges();
         }
     }
