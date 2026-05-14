@@ -1,0 +1,14 @@
+Here is a description of a system:
+
+The system represents a hierarchy of transportation vehicles using object-oriented programming principles. The root superclass is named Vehicle, which defines the common attributes shared by all vehicles: private fields for brand, model, and year. The class also provides public getter methods to retrieve these values.
+
+Two subclasses extend Vehicle: Car and Motorcycle. The Car class introduces additional private attributes for numberOfDoors and fuelType, while the Motorcycle class adds private attributes for engineCapacity and hasSidecar. Both subclasses inherit the shared vehicle properties from Vehicle while defining their own unique attributes and accessor methods.
+
+Question 1 (3 points): Define in Java all classes in the system.
+
+Question 2 (2 points): Define a method with the signature
+
+public static List<Vehicle> search(List<Vehicle> list, int year)
+
+that returns all vehicles manufactured after year.
+

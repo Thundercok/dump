@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ffd14541-1c7b-4bdd-beed-4f320c6a2982" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../523c0012_LAB7.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Controllers/CoursesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Controllers/DepartmentsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Controllers/EnrollmentsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Controllers/InstructorsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Controllers/StudentsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/Course.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/Department.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/Enrollment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/Instructor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/SchoolDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Models/Student.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/SchoolAppCoreMVC.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/SchoolDB.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Courses/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Courses/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Courses/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Courses/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Courses/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Departments/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Departments/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Departments/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Departments/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Departments/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Enrollments/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Enrollments/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Enrollments/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Enrollments/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Enrollments/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Instructors/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Instructors/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Instructors/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Instructors/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Instructors/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Students/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Students/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Students/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Students/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/Students/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Azure.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Azure.Identity.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/Microsoft.Build.Locator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/Microsoft.IO.Redist.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.CommandLine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.Numerics.Vectors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/System.Threading.Tasks.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/cs/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/de/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/es/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/fr/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/it/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/ja/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/ko/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/pl/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/pt-BR/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/ru/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/tr/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/zh-Hans/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-net472/zh-Hant/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/Microsoft.Build.Locator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/System.CommandLine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/cs/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/de/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/es/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/fr/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/it/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/ja/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/ko/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/pl/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/pt-BR/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/ru/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/tr/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/zh-Hans/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/BuildHost-netcore/zh-Hant/System.CommandLine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Build.Framework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Build.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.Elfie.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Data.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.DiaSymReader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Identity.Client.Extensions.Msal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.NET.StringTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.SolutionPersistence.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Mono.TextTemplating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.DependencyResolver.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.LibraryModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.ProjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/NuGet.Versioning.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SQLitePCLRaw.batteries_v2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SQLitePCLRaw.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SQLitePCLRaw.provider.e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC.staticwebassets.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/SchoolAppCoreMVC.staticwebassets.runtime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.ClientModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Memory.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Reflection.MetadataLoadContext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/af/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ar/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/az/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/bg/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/bn-BD/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/da/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/el/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fa/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fi-FI/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr-BE/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/he/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/hr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/hu/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/hy/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/id/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/is/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko-KR/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ku/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/lv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ms-MY/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/mt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/nb-NO/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/nb/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/nl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/pt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ro/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/browser-wasm/nativeassets/net9.0/e_sqlite3.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-arm/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-arm64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-armel/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-mips64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-musl-arm/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-musl-riscv64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-ppc64le/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-riscv64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-s390x/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/linux-x86/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/osx-arm64/native/libe_sqlite3.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/osx-x64/native/libe_sqlite3.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-arm/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-arm64/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-x64/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/sk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/sl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/sr-Latn/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/sr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/sv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/th-TH/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/uk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/uz-Cyrl-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/uz-Latn-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/vi/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-CN/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAp.87136F84.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/SchoolAppCoreMVC.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/apphost" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/08jwlolj3i-{0}-c2jlpeoesf-c2jlpeoesf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/18p79qgj15-{0}-ausgxo2sd3-ausgxo2sd3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/1wgndstbze-{0}-87fc7y1x7t-87fc7y1x7t.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/45merd8vv9-{0}-pk9g2wxc8p-pk9g2wxc8p.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/4i6yzeljia-{0}-6cfz1n2cew-6cfz1n2cew.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/4m4otnn0h7-{0}-hrwsygsryq-hrwsygsryq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/4r8swx1mrv-{0}-4v8eqarkd7-4v8eqarkd7.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/5gu1g68urf-{0}-ee0r1s7dh0-ee0r1s7dh0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/5z3bvlfy0y-{0}-493y06b0oq-493y06b0oq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/6i9k9gr4h4-{0}-6pdc2jztkx-6pdc2jztkx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/6m8poiwq4t-{0}-b7pk76d08c-b7pk76d08c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/6roqrx65tl-{0}-jd9uben2k1-jd9uben2k1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/79qxbehbea-{0}-fvhpjtyr6v-fvhpjtyr6v.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/7okuuvd8ug-{0}-d7shbmvgxk-d7shbmvgxk.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/7sga1mdkce-{0}-37tfw0ft22-37tfw0ft22.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/7ynv3hfzb9-{0}-y7v9cxd14o-y7v9cxd14o.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/81bt9urjw5-{0}-ub07r2b239-ub07r2b239.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/8l40ua44ce-{0}-b9sayid5wm-b9sayid5wm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/97fpuggufc-{0}-ttgo8qnofa-ttgo8qnofa.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/aa2r9nvutc-{0}-mlv21k5csn-mlv21k5csn.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/ar3dkd426y-{0}-356vix0kms-356vix0kms.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/b8kh1le2h0-{0}-nvvlpmu67g-nvvlpmu67g.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/bcsw7ogcrd-{0}-kbrnm935zg-kbrnm935zg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/bf6e0djvkb-{0}-63fj8s7r0e-63fj8s7r0e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/biaeqjf1jz-{0}-s35ty4nyc5-s35ty4nyc5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/br63pafxhr-{0}-404ifivg8x-404ifivg8x.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/bxfl9fz3h8-{0}-c2oey78nd0-c2oey78nd0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/bz13k32xry-{0}-2z0ns9nrw6-2z0ns9nrw6.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/d95j6566sx-{0}-fsbi9cje9m-fsbi9cje9m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/fpmdd96yj0-{0}-xtxxf3hu2r-xtxxf3hu2r.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/hs8i2icwah-{0}-o1o13a6vjx-o1o13a6vjx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/j9vctruqhj-{0}-j5mq2jizvt-j5mq2jizvt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/kfiveaggwo-{0}-iovd86k7lj-iovd86k7lj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/kj6utuaddp-{0}-khv3u5hwcm-khv3u5hwcm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/ks0zgua6bo-{0}-83jwlth58m-83jwlth58m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/ktygpl2o3n-{0}-cosvhxvwiu-cosvhxvwiu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/lo49ycf7dn-{0}-46ein0sx1k-46ein0sx1k.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/lp2uzkqifo-{0}-bqjiyaj88i-bqjiyaj88i.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/lvq8xyd7dl-{0}-06098lyss8-06098lyss8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/mmii7y2nx3-{0}-404ifivg8x-404ifivg8x.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/mnnnw5pv9v-{0}-x0q3zqp4vz-x0q3zqp4vz.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/mvgo3t2i7s-{0}-mrlpezrjn3-mrlpezrjn3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/n8ivugnb2d-{0}-dxx9fxp4il-dxx9fxp4il.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/nrvy6tdvfh-{0}-muycvpuwrr-muycvpuwrr.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/nvj4hypjkr-{0}-0j3bgjxly4-0j3bgjxly4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/oz9jr2y0bq-{0}-v0zj4ognzu-v0zj4ognzu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/qe3jcswt1s-{0}-k8d9w2qqmf-k8d9w2qqmf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/qzt0v6wahw-{0}-ag7o75518u-ag7o75518u.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/r4xjhwa7gl-{0}-h1s4sie4z3-h1s4sie4z3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/rjasw6uumb-{0}-61n19gt1b8-61n19gt1b8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/sg9h1imj2n-{0}-47otxtyo56-47otxtyo56.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/snrri2oted-{0}-aexeepp0ev-aexeepp0ev.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/sssmf6zglg-{0}-vr1egmr9el-vr1egmr9el.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/tbobhgmfrx-{0}-ft3s53vfgj-ft3s53vfgj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/tq4ki53p8a-{0}-lcd1t2u6c8-lcd1t2u6c8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/u5hek6kgo3-{0}-jj8uyg4cgr-jj8uyg4cgr.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/u8eqkqhjmd-{0}-0i3buxo5is-0i3buxo5is.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/uccoyp2gvq-{0}-pj5nd1wqec-pj5nd1wqec.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/vckbz9prie-{0}-tdbxkamptv-tdbxkamptv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/wrymjsza2l-{0}-lzl9nlhx6b-lzl9nlhx6b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/wvysy29712-{0}-notf2xhcfb-notf2xhcfb.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/xvi1pr9q0s-{0}-rzd6atqjts-rzd6atqjts.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/y8fues2fg4-{0}-r4e9w2rdcm-r4e9w2rdcm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/compressed/y9kjjnwsb1-{0}-erw9l3u2r3-erw9l3u2r3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/rbcswa.dswa.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/ref/SchoolAppCoreMVC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/refint/SchoolAppCoreMVC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/rjimswa.dswa.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/rpswa.dswa.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/scopedcss/bundle/SchoolAppCoreMVC.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/scopedcss/projectbundle/SchoolAppCoreMVC.bundle.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/staticwebassets.build.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/staticwebassets.build.json.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/staticwebassets.development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/Debug/net10.0/swae.build.ex.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/SchoolAppCoreMVC.csproj.codegeneration.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/SchoolAppCoreMVC.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/SchoolAppCoreMVC.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/SchoolAppCoreMVC.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolAppCoreMVC/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Thundercok"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Thundercok/dump.git",
+    "accountId": "7eaaec0f-9845-4e66-a05a-6419e2afd9ee"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="3DgQcXS9Sc3eXirqYsjwk7KGogK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffd14541-1c7b-4bdd-beed-4f320c6a2982" name="Changes" comment="" />
+      <created>1778701312598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778701312598</updated>
+      <workItem from="1778701314163" duration="4765000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
