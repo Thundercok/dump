@@ -1,8 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Vehicle {
-    private String brand;
+    private final String brand;
     private String model;
     private final int year;
 
@@ -32,7 +29,7 @@ public class Vehicle {
         this.model = model;
     }
 
-    public static class Car extends Vehicle {
+    public class Car extends Vehicle {
         private int numberOfDoors;
         private int fuelType;
 
@@ -60,7 +57,7 @@ public class Vehicle {
 
     }
 
-    public static class Motorcycle extends Vehicle {
+    public class Motorcycle extends Vehicle {
         private int engineCapacity;
         private boolean hasSidecar;
 
@@ -86,30 +83,14 @@ public class Vehicle {
             this.hasSidecar = hasSidecar;
         }
     }
+}
 
-    public static List<Vehicle> search(List<Vehicle> list, int year) {
-        List<Vehicle> result = new ArrayList<>();
-        for (Vehicle vehicle : list) {
-            if (vehicle.getYear() > year) {
-                result.add(vehicle);
-            }
-        }
-        return result;
-    }
-
-    public static void main(String[] args) {
-        List<Vehicle> list = new ArrayList<>();
-        list.add(new Car("BMW", "NhatHuy", 2004, 4, 1));
-        list.add(new Car("Mecxedec", "XiVit", 2012, 4, 1));
-        list.add(new Motorcycle("Honda", "Cut", 2022, 150, false));
-        list.add(new Motorcycle("Honda", "Past", 2002, 150, false));
-        list.add(new Motorcycle("Honda", "Future", 2026, 150, false));
-        list.add(new Motorcycle("Suzuki", "Elegant", 2022, 500, false));
-        list.add(new Motorcycle("Suzuki", "Inelegant", 2024, 500, false));
-
-        List<Vehicle> result = search(list, 2020);
-        for (Vehicle vehicle : result) {
-            System.out.println(vehicle.getBrand() + " " + vehicle.getModel() + " " + vehicle.getYear());
+public static List<Vehicle> search(List<Vehicle> list, int year) {
+    List<Vehicle> result = new ArrayList<>();
+    for (Vehicle vehicle : list) {
+        if (vehicle.getYear() > year) {
+            result.add(vehicle);
         }
     }
+    return result;
 }

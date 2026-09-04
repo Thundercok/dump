@@ -1,0 +1,107 @@
+{
+  "slides": [
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/2092aae3bfc03a576531e9f236acb9d865b8571b9fe41bd402c239a9afbe0823.mp4",
+      "rev_file": "slides/files/MultivariableLecture/2092aae3bfc03a576531e9f236acb9d865b8571b9fe41bd402c239a9afbe0823_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/435325e1c223a46161ba37f9dbb378299e7c76ab1f03fea70885f30ed6893c26.mp4",
+      "rev_file": "slides/files/MultivariableLecture/435325e1c223a46161ba37f9dbb378299e7c76ab1f03fea70885f30ed6893c26_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/179836e37bc4f0f17f5d342a21f08c9ab485f651584bef398e60d86361395326.mp4",
+      "rev_file": "slides/files/MultivariableLecture/179836e37bc4f0f17f5d342a21f08c9ab485f651584bef398e60d86361395326_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/888a17fa5bece8795afbcab2226ab825498c33bbada0f889e5568b5ce10da404.mp4",
+      "rev_file": "slides/files/MultivariableLecture/888a17fa5bece8795afbcab2226ab825498c33bbada0f889e5568b5ce10da404_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/c48a2be2ea3d51a4bd76b6b0320be12ad53aaf6ef467f327ea533242c6f26ccf.mp4",
+      "rev_file": "slides/files/MultivariableLecture/c48a2be2ea3d51a4bd76b6b0320be12ad53aaf6ef467f327ea533242c6f26ccf_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/3da7ff7f6f4b9c5c6a51c6fd5d18e85f3145411cbaf234e87fbecb2e405404db.mp4",
+      "rev_file": "slides/files/MultivariableLecture/3da7ff7f6f4b9c5c6a51c6fd5d18e85f3145411cbaf234e87fbecb2e405404db_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "skip_animations": false,
+      "src": null,
+      "type": "video",
+      "direction": "horizontal",
+      "file": "slides/files/MultivariableLecture/2dcd59b43c100cf48dddd6d41cb91b156b419ccb5a240e4f73aff1ed0ef127c1.mp4",
+      "rev_file": "slides/files/MultivariableLecture/2dcd59b43c100cf48dddd6d41cb91b156b419ccb5a240e4f73aff1ed0ef127c1_reversed.mp4"
+    }
+  ],
+  "resolution": [
+    1280,
+    720
+  ],
+  "background_color": "black"
+}

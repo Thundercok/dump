@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/218615070_3377445847_797206065.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/4036126383_2746920819_2327818310.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/4036126383_2743551178_3932745853.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/4036126383_2685365445_3337141050.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/4036126383_1266733681_1231120221.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/4036126383_2685365445_1049001911.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/4036126383_4184645720_204912969.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/1563810334_219258401_2180798286.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/3763350644_221990701_2822696049.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/1869561857_3576982675_1508743483.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/1808124731_3980147384_2281961876.mp4'
+file 'file:/Users/thundercock2/Documents/Github/dump/1/schoolworks/lap-trinh-huong-doi-tuong/Final/media/videos/top_down_level_curves/500p30/partial_movie_files/TopDownLevelCurvesScene/975151545_2685365445_2207540250.mp4'
